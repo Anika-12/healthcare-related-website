@@ -5,7 +5,11 @@ import Home from "./Components/Home/Home";
 import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Error from "./Components/Error/Error";
+import Register from "./Components/Register/Register";
+import Login from "./Components/Login/Login";
 import Services from './Components/Services/Services';
+import AuthProvider from "./Context/AuthProvider";
+import PrivateRoute from "./Private/PrivateRoute";
 
 
 
@@ -20,7 +24,7 @@ function App() {
   });
   return (
     <div className="App">
-       
+         <AuthProvider>
       <userContext.Provider value={[user, setUser]}>
         <Router>
           <Switch>
@@ -33,6 +37,12 @@ function App() {
             <Route exact path="/">
               <Services></Services>
             </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <Route exact path="/register">
+              <Register></Register>
+            </Route>
            
            
            <Route path="*">
@@ -43,7 +53,7 @@ function App() {
         </Router>
 
       </userContext.Provider>
-     
+     </AuthProvider>
     </div>
   );
 }
