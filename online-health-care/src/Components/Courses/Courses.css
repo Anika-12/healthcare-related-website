@@ -1,0 +1,21 @@
+.all {
+    padding: 50px;
+    margin-right: 60px;
+    
+  }
+  
+  .cart {
+    padding: 10px;
+    height: 405px;
+    border: 2px solid rgb(90, 13, 179);
+    margin-top: 10px;
+   background-color: #30232357; 
+   margin-left: 220px;
+  
+
+  }
+  .text-area {
+    text-align: center;
+   
+     }
+  

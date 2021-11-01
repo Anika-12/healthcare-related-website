@@ -1,0 +1,23 @@
+.banner {
+  background-image: url("https://www.medicaldevice-network.com/wp-content/uploads/sites/11/2018/11/human-and-machine-accenture.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 780px;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title {
+  color: rgb(56, 135, 138);
+  font-weight: bold;
+  font-size: 59px;
+}
+.about-btn {
+  background-color: #7778c4;
+  outline: none;
+  border: none;
+  padding: 17px 34px;
+  color: rgb(26, 23, 23);
+}

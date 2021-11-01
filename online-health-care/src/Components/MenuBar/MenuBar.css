@@ -1,0 +1,14 @@
+.items {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(95, 48, 48);
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+  background-color: rgb(2, 6, 15);
+}
+.items:hover {
+  color: rgb(68, 197, 154);
+}
